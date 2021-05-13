@@ -50,11 +50,6 @@ POST request - without Accept Headers
     $ curl -X POST -H "Accept:" http://127.0.0.1:5000/ -v
 
 
-Testing
--------
-
-    $ python -m pytest
-
 Logging
 -------
 By default, when FLASK_ENV is set to development, the app is set to debug mode which includes debug logging.
@@ -70,3 +65,7 @@ Flask example log
     $ [2021-05-13 13:57:53,607] DEBUG in __init__: url: http://127.0.0.1:5000/
 
 
+Unit Testing
+-------
+
+    $ python -m pytest
