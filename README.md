@@ -31,13 +31,13 @@ Running
 
 Example requests
 ----------------
-curl by default sends `Accept: */*`
 
 GET request - Accept headers: "application/json"
 
     $ curl -H "Accept: application/json" http://127.0.0.1:5000/ -v
 
 GET request - without Accept Headers
+    curl by default sends `Accept: */*` so we'll need to be explicit with "Accept:" to not send Accept headers
 
     $ curl  -H "Accept:" http://127.0.0.1:5000/ -v
 
