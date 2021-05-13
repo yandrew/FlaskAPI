@@ -1,9 +1,10 @@
 FlaskAPI
 =========
-This application provides a basic api with logging and testing.
+This application provides a basic api with logging and testing. Instructions are below are for mac/linux unless specified.
 
 Setup
 ----------
+Requires python 3.9 to be installed
 
 Setup a virtualenv and activate it:
 
@@ -17,9 +18,16 @@ Install packages:
 
 Setup Environment Variables:
     FLASK_ENV is set to production so debug mode will not be on.
+    MACOS:
     
     $ export FLASK_APP=basicapi
     $ export FLASK_ENV=production
+
+    
+    Windows:
+    
+    $ SET FLASK_APP=basicapi
+    $ SET FLASK_ENV=production
 
 
 Running
@@ -58,6 +66,7 @@ Custom Debug logging has been added to the route.
 Debug mode can be enabled by resetting the env variable and restarting the server: 
 
     $ export FLASK_ENV=development
+    (use SET FLASK_ENV=development for Windows)
     $ flask run
 
 Flask example log
