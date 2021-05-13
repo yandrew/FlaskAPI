@@ -12,7 +12,7 @@ Setup a virtualenv and activate it:
 
 Install packages:
     
-    $ cd FlaskAPI
+    $ cd <root repo folder>
     $ pip install -e .
 
 Setup Environment Variables:
