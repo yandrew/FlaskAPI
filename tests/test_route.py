@@ -18,6 +18,14 @@ def test_post_accept_json(client):
 
 
 def test_get_accept_non_json(client):
+    res = client.get('/', headers=[('Accept', '')])
+    assert res.status_code == 200
+    expected = "<p>Hello, World</p>"
+    assert expected == res.get_data(as_text=True)
+    assert 'text/html' in res.content_type
+    
+    
+def test_get_accept_non_json(client):
     res = client.post('/', headers=[('Accept', '')])
     assert res.status_code == 200
     expected = "<p>Hello, World</p>"
