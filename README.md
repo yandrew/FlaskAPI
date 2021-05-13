@@ -17,6 +17,7 @@ Install packages:
 
 Setup Environment Variables:
     FLASK_ENV is set to production so debug mode will not be on.
+    
     $ export FLASK_APP=basicapi
     $ export FLASK_ENV=production
 
