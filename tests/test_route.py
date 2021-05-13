@@ -25,7 +25,7 @@ def test_get_accept_non_json(client):
     assert 'text/html' in res.content_type
     
     
-def test_get_accept_non_json(client):
+def test_post_accept_non_json(client):
     res = client.post('/', headers=[('Accept', '')])
     assert res.status_code == 200
     expected = "<p>Hello, World</p>"
