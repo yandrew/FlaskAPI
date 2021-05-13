@@ -64,7 +64,11 @@ Flask example log
     
     $ [2021-05-13 13:57:53,607] DEBUG in __init__: url: http://127.0.0.1:5000/
 
+Default flask logging can be enabled by removing this line in FlaskAPI/basicapi/__init__.py
+It can also be modified to a different log level.
 
+    $ log.setLevel(logging.ERROR)
+    
 Unit Testing
 -------
 
