@@ -2,7 +2,6 @@ import json
 
 
 def test_get_accept_json(client):
-    # res = client.get('/', header={"Accept": "application/json"})
     res = client.get('/', headers=[('Accept', 'application/json')])
     assert res.status_code == 200
     expected = {'message': 'Hello, World'}
